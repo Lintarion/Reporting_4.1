@@ -12,6 +12,7 @@ compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
 allure {
+
     version = '2.20.0'
     useJUnit5 {
         version ='2.20.0'
@@ -19,12 +20,11 @@ allure {
 }
 
 repositories {
-    jcenter()
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
     implementation 'com.codeborne:selenide:6.10.3'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'io.qameta.allure:allure-selenide:2.20.0'
